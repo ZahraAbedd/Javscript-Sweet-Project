@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="modal">
+        <span class="close"><i class="fas fa-window-close"></i></span>
+        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+        <img src="" alt="">
+        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+    </div>
+
+    <header id="home">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#store">Store</a></li>
+            </ul>
+            <div class="phone">
+            <i class="fas fa-phone"></i>
+            <p>+123456789</p>
+            </div>
+          <div class="shoppings">
+            <div class="box-buy">
+                <i class="fas fa-shopping-cart"></i>
+                <p><span id="item-count">0</span> items - $<span class="item-total">0</span></p>
+            </div>
+            <ul class="box">
+                    <!-- <li class="item">
+                        <img src="./img/cake-1.jpeg" alt="">
+                        <div class="price">
+                            <p>cart item</p>
+                            <p>$ <span id="cart-item-price">
+                                10.99</span></p>
+                        </div>
+                        <i class="fas fa-trash"></i>
+                    </li>
+                    <li class="item">
+                        <img src="./img/cake-2.jpeg" alt="">
+                        <div class="price">
+                            <p>cart item</p>
+                            <p>$ <span  id="cart-item-price">
+                                10.99</span> </p>
+                        </div>
+                        <i class="fas fa-trash"></i>
+                    </li> -->
+                    <div class="total-p">
+                        <p>Total</p>
+                        <p class="total-price"><span>$</span>0</p>
+                    </div>
+                    <button class="clear">clear cart</button>
+                    <button class="checkout">checkout</button>
+            </ul>
+            </div>
+        </div>
+        <div class="slider">
+            <h1>welcome to <span>grandma's</span></h1>
+            <button>explore</button>
+        </div>
+    </header>
+
+
+
+    <section class="about" id="about">
+        <div class="box-container">
+            <div class="box-about">
+                <h2>about <span>us</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique nemo hic vel eveniet ipsum.</p>
+                <button>Explore</button>
+            </div>
+            <div class="img">
+                <div class="item-img"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="store" id="store">
+        <h1>our <span>store</span></h1>
+        <div class="buttons">
+            <button  data-filter="all">all</button>
+            <button  data-filter="cakes">cakes</button>
+            <button  data-filter="cupcakes">cupcakes</button>
+            <button  data-filter="sweets">sweets</button>
+            <button  data-filter="doughnuts">doughnuts</button>
+        </div>
+        <form action="" class="search">
+            <i class="fas fa-search" id="search-icon"></i>
+            <input type="text" class="search-item" placeholder="item...">
+        </form>
+
+
+
+        <div class="box-container">
+            <div class="box cakes">
+                <div class="img-container">
+                    <img src="./img/cake-1.jpeg" alt="">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="des">
+                    <p class="name">cake item</p>
+                    <p class="cost">$5</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="box cupcakes">
+                <div class="img-container">
+                    <img src="./img/cupcake-1.jpeg" alt="">
+                    <div class="item-icone">
+                        <i class="fas fa-shopping-cart"></i>
+                       </div>
+                </div>
+               <div class="des">
+                <p class="name">cupcake item</p>
+                <p class="cost">$5</p>
+               </div>
+            </div>
+
+
+
+            <div class="box cupcakes">
+                <div class="img-container ">
+                    <img src="./img/cupcake-2.jpeg" alt="">
+                    <div class="item-icone">
+                        <i class="fas fa-shopping-cart"></i>
+                       </div>
+                </div>
+                <div class="des">
+                    <p class="name">cupcake item</p>
+                    <p class="cost">$5</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="box doughnuts">
+                <div class="img-container">
+                    <img src="./img/doughnut-1.jpeg" alt="">
+                    <div class="item-icone">
+                        <i class="fas fa-shopping-cart"></i>
+                       </div>
+                </div>
+                <div class="des">
+                    <p class="name">doughnut item</p>
+                    <p class="cost">$5</p>
+                </div>
+            </div>
+
+
+
+            <div class="box cakes">
+                <div class="img-container">
+                    <img src="./img/cake-2.jpeg" alt="">
+                  <div class="item-icone">
+                        <i class="fas fa-shopping-cart"></i>
+                       </div>
+                </div>
+                <div class="des">
+                    <p class="name">cake item</p>
+                    <p class="cost">$5</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="box cakes">
+                <div class="img-container">
+                    <img src="./img/cake-3.jpeg" alt="">
+                       <div class="item-icone">
+                    <i class="fas fa-shopping-cart"></i>
+                   </div>
+                </div>
+               <div class="des">
+                <p class="name">cake item</p>
+                <p class="cost">$5</p>
+               </div>
+            </div>
+
+
+
+
+            <div class="box cupcakes">
+                <div class="img-container">
+                    <img src="./img/cupcake-3.jpeg" alt="">
+                       <div class="item-icone">
+                    <i class="fas fa-shopping-cart"></i>
+                   </div>
+                </div>
+                <div class="des">
+                    <p class="name">cupcake item</p>
+                     <p class="cost">$5</p>
+                </div>
+            </div>
+            
+
+
+
+            <div class="box doughnuts">
+                <div class="img-container">
+                    <img src="./img/doughnut-2.jpeg" alt="">
+                       <div class="item-icone">
+                    <i class="fas fa-shopping-cart"></i>
+                   </div>
+                </div>
+               <div class="des">
+                <p class="name">doughnut item</p>
+                <p class="cost">$5</p>
+               </div>
+            </div>
+
+
+
+
+
+            <div class="box sweets">
+                <div class="img-container">
+                    <img src="./img/sweets-1.jpeg" alt="">
+                       <div class="item-icone">
+                    <i class="fas fa-shopping-cart"></i>
+                   </div>
+                </div>
+                <div class="des">
+                    <p class="name">sweets item</p>
+                     <p class="cost">$5</p>
+                </div>
+            </div>
+
+
+
+            <div class="box doughnuts">
+                <div class="img-container">
+                    <img src="./img/doughnut-3.jpeg" alt="">
+                       <div class="item-icone">
+                    <i class="fas fa-shopping-cart"></i>
+                   </div>
+                </div>
+                <div class="des">
+                    <p class="name">doughnuts item</p>
+                      <p class="cost">$5</p>
+                </div>
+            </div>
+
+
+
+            <div class="box sweets">
+                <div class="img-container">
+                    <img src="./img/sweets-2.jpeg" alt="">
+                    <div class="item-icone">
+                        <i class="fas fa-shopping-cart"></i>
+                   </div>
+                </div>
+                <div class="des">
+                    <p class="name">sweets item</p>
+                    <p class="cost">$5</p>
+                </div>
+            </div>
+
+
+            <div class="box sweets">
+                <div class="img-container">
+                    <img src="./img/sweets-3.jpeg" alt="">
+                       <div class="item-icone">
+                    <i class="fas fa-shopping-cart"></i>
+                   </div>
+                </div>
+               <div class="des">
+                <p class="name">sweets item</p>
+                <p class="cost">$5</p>
+               </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    
+<a href="#home" class="scroll-top">
+    <i class='fas fa-angle-up'></i>
+</a>
+    <script src="./app.js"></script>
+</body>
+</html>

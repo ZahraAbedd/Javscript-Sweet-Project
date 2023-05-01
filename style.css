@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all 1s ease-in-out;   
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+button:hover{
+    background: #000;
+    color: rgb(245, 132, 151);
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+}
+header .navbar .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    list-style-type: none;
+}
+header .navbar li a{
+    text-decoration: none;
+    color: rgb(250, 170, 184);
+    font-size: 23px;
+}
+header .navbar li a:hover{
+    background: pink;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 15px;
+    box-shadow: 0px 10px 15px 0 rgba(17, 16, 17, 0.1);
+
+}
+header .navbar .logo{
+    position: relative;
+    left: -70px;
+}
+
+header .navbar .logo:hover{
+    transform: rotate(360deg);
+}
+header .navbar .phone{
+    display: flex;
+    align-items: center;
+    width: 25px;
+}
+header .navbar .phone i{
+    margin: 0 10px;
+    display: inline-block;
+}
+.shoppings{
+    position: relative;
+}
+
+header .navbar .shoppings .box-buy{
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.shoppings .box{
+    position: absolute;
+    right: -60px;
+    top: 11vh;
+    width: 330px;
+    background: rgba(247, 242, 218, 0.4);
+    text-align: center;
+    display: none;
+    transition: all 2s ease-in-out;
+}
+.shoppings .show-box-buy{
+    display: block;
+    transition: all 2s ease-in-out;
+}
+.shoppings ul{
+    list-style-type: none;
+    min-height: 20rem;
+}
+.shoppings ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.5rem 1rem;
+}
+.shoppings ul .total-p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+.shoppings ul .total-p p{
+    font-size: 19px;
+}
+.shoppings ul .total-p span{
+    font-weight: normal;
+    font-size: 20px;
+}
+.shoppings ul .total-p .total-price{
+    font-weight: bold;
+    font-size: 18px;
+}
+.shoppings ul button{
+    padding: 5px 5px;
+    margin: 10px 32px;
+    background: rgba(0, 0, 0, 0);
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.shoppings ul .clear{
+    border: 1px solid black;
+   
+}
+.shoppings ul .clear:hover{
+    color: rgb(253, 112, 135);
+    background: black;
+    transition: all 0.4s ease-in-out;
+}
+.shoppings ul .checkout{
+    border: 1px solid rgb(218, 136, 221);
+    color: rgb(250, 149, 166);
+
+}
+.shoppings ul .checkout:hover{
+    color: black;
+    background: rgb(247, 128, 148);
+    transition: all 0.4s ease-in-out;
+}
+.fa-trash{
+    color:rgb(250, 149, 166);
+}
+.fa-trash:hover{
+    color: rgb(88, 49, 55);
+}
+.shoppings .box .item img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+header .navbar .box-buy:hover{
+    color: white;
+    background: rgb(248, 158, 173);
+}
+header .navbar .box-buy i{
+    margin-right: 12px;
+}
+header .slider{
+    background-image: url("./img/headerBcg.jpeg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(223, 186, 75, 0.4);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header .slider h1{
+    font-size: 45px;
+    color: white;
+    letter-spacing: 3px;
+}
+header .slider h1 span{
+    color: rgb(247, 155, 170);
+    font-size: 60px;
+}
+header .slider button{
+    background-color: rgba(216, 197, 161,0.4);
+    border: none;
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    border: 2px solid #000;
+    animation: 3s fade infinite;
+}
+header .slider button:hover{
+    background: #000;
+    color: rgb(245, 132, 151);
+}
+
+.about{
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about .box-container{
+    flex: 1 1 20rem;
+    display: flex;
+}
+
+.about .box-container .box-about{
+    padding: 30px 30px 0 50px;
+}
+
+.about .box-container .box-about h2{
+    font-size: 40px;
+
+}
+.about .box-container .box-about h2 span{
+    color: rgb(247, 160, 175);
+}
+.about .box-container .box-about p{
+    margin: 20px 0;
+    font-size: 20px;
+    color: rgb(160, 155, 156);
+}
+.about .box-container .box-about button{
+    background: #fff;
+    padding: 10px 40px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-top: 30px;
+    animation: 3s fade infinite;
+}
+
+.about .box-container .box-about button:hover{
+    background: #000;
+    color: rgb(245, 132, 151);
+}
+
+.about .box-container .img{
+    border: 9px solid rgb(241, 209, 138);
+    width: 650px;
+    height: 450px;
+    border-radius: 5px;
+}
+.about .box-container .img .item-img{
+    width: 100%;
+    height: 432px;
+    background-image: url("./img/sweets-1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+.about .box-container .img .item-img:hover{
+    transform: translateX(-30px) translateY(30px);
+}
+
+.store{
+    text-align: center;
+    background: rgb(233, 232, 227);
+}
+.store h1{
+    font-size: 40px;
+    padding: 50px 0;
+    color: #000;
+    letter-spacing: 4px;
+}
+.store h1 span{
+    color: rgb(250, 149, 166);
+}
+
+.store .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.store .buttons button{
+    margin: 0 50px;
+    border: 1px solid #000;
+    padding: 8px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top:20px ;
+}
+
+.store .search{
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.store .search i{
+    width: 50px;
+    background: rgb(252, 132, 152);
+    padding:20px 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.store .search input{
+    padding: 10px;
+    width: 600px;
+    outline: none;
+    font-size: 18px;
+}
+.store .search .input::placeholder{
+    font-size: 20px;
+}
+
+.store .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.store .box-container .box{
+    flex: 1 1 18rem;
+    background: #fff;
+    margin: 20px;
+    /* padding: 20px 10px; */
+    border-radius: 10px;
+}
+.store .box-container .box .img-container{
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+.store .box-container .box .img-container i{
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    transform: translateX(60px)translateY(60px);
+    background: rgba(230, 227, 169, 0.7);
+    padding: 20px;
+    border-top-left-radius: 15px;
+    z-index: 10000;
+}
+
+.store .box-container .box .img-container:hover i{
+    transform: translateX(0px)translateY(8px);
+}
+.store .box-container .box img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.store .box-container .box img:hover{
+    transform: scale(1.3);
+}
+
+
+.store .box-container .box .des{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+}
+.store .box-container .box .name{
+    margin: 0 0 20px 20px;
+}
+
+.store .box-container .box .cost{
+    margin: 0 20px 20px 0;
+}
+.scroll-top{
+    position: fixed;
+    bottom: 7.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+.show{
+    display: block;
+}
+.fa-angle-up{
+    background: rgba(207, 167, 93,0.5);
+    padding: 13px 16px;
+    border-radius: 70%;
+    cursor: pointer;
+    animation: 2s fade infinite;
+}
+
+
+@keyframes fade{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(20px);
+
+    }
+}
+
+.modal{
+    background-color: rgba(75, 73, 73,0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: center;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.show{
+    display: flex;
+}
+
+.modal img{
+    width: 65%;
+    height: 80%;
+}
+.modal span .fa-window-close{
+    position: absolute;
+    top: 10px;
+    right: 235px;
+    font-size: 50px;
+}
+.modal span i{
+    font-size: 60px;
+    color: rgb(253, 112, 135);
+    margin: 0 5px;
+}
+
